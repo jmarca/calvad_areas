@@ -1,7 +1,7 @@
 {
   "name": "calvad_areas",
   "version": "0.0.1",
-  "description": "Utility to generate arrays of CalVAD areas",
+  "description": "Utility to handle CalVAD areas (county, airbasin, airdistrict, and grid)",
   "main": "lib/areatypes.js",
   "scripts": {
     "test": "mocha"
