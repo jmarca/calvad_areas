@@ -1,0 +1,14 @@
+{
+  "name": "calvad_areas",
+  "repo": "jmarca/calvad_areas",
+  "description": "Utility to handle CalVAD areas (county, airbasin, airdistrict, and grid)",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "lib/areatypes.js",
+  "scripts": [
+    "lib/areatypes.js"
+  ]
+}
