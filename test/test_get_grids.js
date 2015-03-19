@@ -1,5 +1,7 @@
 var should=require('should')
 var calvad_areas = require('../.')
+
+var expected_columns = ["airbasin", "bas", "county", "airdistrict","dis"]
 describe('grid records',function(){
     it('should have all the columns',function(){
 
@@ -12,7 +14,14 @@ describe('grid records',function(){
         Object.keys(grid_records).forEach(function(cell_id){
             grid_records[cell_id].should.be.an.Object;
             var record_keys = Object.keys(grid_records[cell_id])
-            record_keys.should.eql(["airbasin", "bas", "county", "airdistrict","dis"])
+            record_keys.should.eql(expected_columns)
+            // none of the values should be null?
+            //hmm, there is one that has nulls
+            if(cell_id != '118_161'){
+                record_keys.forEach(function(area_type){
+                    should.exist(grid_records[cell_id][area_type])
+                })
+            }
         })
         return null;
     })
