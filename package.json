@@ -14,5 +14,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jmarca/calvad_areas/issues"
+  },
+  "devDependencies": {
+    "should": "^5.2.0"
   }
 }
